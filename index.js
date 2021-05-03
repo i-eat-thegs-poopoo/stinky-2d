@@ -21,7 +21,7 @@ var moving = {
 	' ': false
 }
 
-const gravity = new Vector(0, 0.07)
+const gravity = new Vector(0, 0.1)
 
 let playerBody = new Body(new Vector(300, 200), 50, 50)
 let playerVelo = new Vector(0, 0)
