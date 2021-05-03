@@ -12,7 +12,7 @@ let lastJump = 0
 const controls = {
 	a: new Vector(-2, 0),
 	d: new Vector(2, 0),
-	' ': new Vector(0, -5)
+	' ': new Vector(0, -7)
 }
 
 var moving = {
@@ -21,7 +21,7 @@ var moving = {
 	' ': false
 }
 
-const gravity = new Vector(0, 0.05)
+const gravity = new Vector(0, 0.07)
 
 let playerBody = new Body(new Vector(300, 200), 50, 50)
 let playerVelo = new Vector(0, 0)
