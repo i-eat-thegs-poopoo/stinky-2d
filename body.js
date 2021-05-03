@@ -42,9 +42,7 @@ function drawBody(body, color = '#fff') {
 }
 
 function normalForceX(loc, body, velo) {
-	veloInverse = new Vector(velo.x, velo.y)
-	// veloInverse.multiply()
-	originalLoc = AddVectors(loc, veloInverse.multiply())
+	originalLoc = SubtractVectors(loc, velo)
 	const alignX = new Vector(velo.x, 0)
 	const loc1 = new Vector(body.loc.x - (body.width / 2), body.loc.y - (body.height / 2))
 	const loc2 = new Vector(body.loc.x + (body.width / 2), body.loc.y + (body.height / 2))
@@ -65,8 +63,7 @@ function normalForceX(loc, body, velo) {
 }
 
 function normalForceY(loc, body, velo) {
-	veloInverse = new Vector(velo.x, velo.y)
-	originalLoc = AddVectors(loc, veloInverse.multiply())
+	originalLoc = SubtractVectors(loc, velo)
 	const alignY = new Vector(0, velo.y)
 	const loc1 = new Vector(body.loc.x - (body.width / 2), body.loc.y - (body.height / 2))
 	const loc2 = new Vector(body.loc.x + (body.width / 2), body.loc.y + (body.height / 2))
