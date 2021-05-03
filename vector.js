@@ -12,6 +12,14 @@ function AddVectors(vec1, vec2 = new Vector()) {
 	)
 }
 
+function SubtractVectors(vec1, vec2 = new Vector()) {
+	return new Vector(
+		vec1.x - vec2.x, 
+		vec1.y - vec2.y, 
+		vec1.z - vec2.z
+	)
+}
+
 function DotProduct(vec1, vec2 = new Vector(1, 1, 1)) {
 	return vec1.x * vec2.x + vec1.y * vec2.y + vec1.z * vec2.z;
 }
