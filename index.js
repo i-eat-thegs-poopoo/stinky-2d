@@ -27,10 +27,10 @@ let playerBody = new Body(new Vector(300, 200), 50, 50)
 let playerVelo = new Vector(0, 0)
 
 let rectangleList = [
-	new Body(new Vector(350, 500), 500, 50),
-	new Body(new Vector(450, 300), 50, 200),
-	new Body(new Vector(650, 450), 50, 150),
-	new Body(new Vector(50, 450), 50, 150)
+	new Body(new Vector(350, 500), 500, 51),
+	new Body(new Vector(450, 300), 51, 200),
+	new Body(new Vector(650, 450), 51, 150),
+	new Body(new Vector(50, 450), 51, 150)
 ]
 
 function draw () {
